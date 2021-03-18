@@ -1,0 +1,200 @@
+<!-- Les composantes de l'IoT (Page 2)-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Algérie IoT</title>
+
+		<link rel="icon" href="../images/favicon.jpg" type="image/jpg">
+		<link rel="stylesheet" type="text/css" href="../style/style.css">	
+		<link rel="stylesheet" type="text/css" href="../style/impression.css" media="print">
+
+	</head>
+
+	<body>
+		<!-- Entête de la page -->
+		<header>
+			<!-- Logo -->
+			<img src="../images/logo.JPG" alt="logo IoT" id="LogoImg">
+			<!-- Titredu Site Internet -->
+			<p>Bienvenue sur Algérie IoT</p>
+
+			<!-- Menu horizontal sous-menus déroulant verticalement-->
+			<nav id="menu">
+				<label for="menu-mobile" class="menu-mobile">Menu</label>
+				<input type="checkbox" id="menu-mobile" role="button">
+				<ul>
+					<!-- Menu de la page Acceuil -->
+					<li class="menuActif"><a href="../index.html" title="Vers la page d'accueil du site" >Accueil</a>
+						<ul class="sumenu">
+							<li>
+								<a href="../index.html#definitionIOT">Qu'est ce que l'IoT</a>
+							</li>
+							<li>
+								<a href="../index.html#histoireIOT">L'Histoire de sa création</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Menu de la page Architecture -->
+					<li class="menuActif"><a href="./architecture.html" id ="actif">Architecture </a>
+							<ul class="sumenu">
+								<li>
+									<a href="#composition">Composition</a>
+								</li>
+								<li>
+									<a href="#fonctions">Fonctions</a>
+								</li>
+								<li>
+									<a href="#capteurs">Capteurs</a>
+								</li>
+								<li>
+									<a href="#energie">Energie</a>
+								</li>
+								<li>
+									<a href="#actionneurs">Actionneurs</a>
+								</li>
+								<li>
+									<a href="#connectivite">Connectivité</a>
+								</li>
+
+							</ul>
+					</li>
+					<!-- Menu de la page Réseaux -->
+					<li class="menuActif"><a href="./reseaux.html">Reseaux </a>
+						<ul class="sumenu">
+							<li>
+								<a href="./reseaux.html#les_reseaux">Les réseaux IoT</a>
+							</li>
+							<li>
+								<a href="./reseaux.html#choix_reseau">Comment choisir un réseau </a>
+							</li>
+							<li>
+								<a href="./reseaux.html#reseaux_personnel">Les réseaux personnels</a>
+							</li>
+							<li>
+								<a href="./reseaux.html#reseaux_batiment">Les réseaux du bâtiment</a>
+							</li>
+							<li>
+								<a href="./reseaux.html#reseaux_lpwan">Les réseaux LPWAN</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Menu de la page Exemples -->
+					<li class="menuActif"><a href="./exemples.html">Exemples</a>
+						<ul class="sumenu">
+							<li>
+								<a href="./exemples.html#securite">La sécurité</a>
+							</li>
+							<li>
+								<a href="./exemples.html#sante">La santé</a>
+							</li>
+							<li>
+								<a href="./exemples.html#transport_publics">Les transports publics</a>
+							</li>
+							<li>
+								<a href="./exemples.html#ville_intelligeantes">Les villes intelligentes</a>
+							</li>
+							<li>
+								<a href="./exemples.html#reseaux_electriques">Les réseaux électriques intelligents</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Menu de la page Bibliographie -->
+					<li class="menuActif"><a href="./produits.html"> Bibliographie</a>
+					
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Contenu de la Page Architecture -->
+		<main id="comp">
+			<section id="contenu">
+				<h1 id="composition">Comment se compose un système?</h1>
+				
+
+				<p>
+					Un système <abbr title="Internet Of Things">IoT</abbr> réunit de nombreux acteurs et composants technologiques.
+					Il est composé d'objets connectés, de réseaux de communication sans fil,
+					de plateformes de collecte/d'hébergement/de traitement des données,
+					d'applications/services pour les utilisateurs finaux et d'une supervision/sécurisation de toute la
+					chaîne.
+					</p>
+				
+				<figure>
+					<img src="../images/composante.JPG" alt="image composante IoT">
+					<figcaption>&copy;Copyright ConnectWave </figcaption>
+				</figure>
+				
+				<h1 id="fonctions">Les fonctions de l'objet connecté</h1>
+
+				<p>
+					L'objet connecté est d'abord un objet qui a une fonction mécanique et/ou électrique propre,
+					il peut soit être conçu directement « connectable », soit il est déjà existant et la connectivité est rajoutée à postériori.
+					L'objet connecté a pour fonction de collecter des données de capteurs,
+					de traiter ces données et de les communiquer à l'aide de d'une fonction de connectivité et de recevoir
+					des instructions pour exécuter une action. Généralement ces fonctions de l'objet connecté nécessitent
+					une source d'énergie, surtout quand les données sont prétraitées directement dans l'objet.
+
+				</p>
+				
+				<figure>
+					<img src="../images/connectivite.JPG" alt="image connectivite IoT">
+					<figcaption>&copy;Copyright ConnectWave </figcaption>
+				</figure>
+				
+					
+					
+
+				<h2 id="capteurs">Les capteurs</h2>
+				<p>
+
+					Les capteurs sont des dispositifs permettant de transformer une grandeur physique observée (température,
+					luminosité, mouvement etc…) en une grandeur digitale utilisable par des logiciels.
+					Il existe une très grande variété de capteurs de tous types, les objets connectés ont souvent la
+					fonction de captation de ces grandeurs physiques sur leurs lieux d'utilisation.
+					Exemple de capteurs : lumière, présence, proximité, position, déplacement, accélération,
+					rotation, température, humidité, son, vibration, électrique, magnétique, chimique, gaz, flux,
+					force, pression, niveau, …
+				</p>
+
+				<h2 id="energie">Les sources d'énergie</h2>
+				<p>
+					Les sources d'énergie sont de 4 types :
+					alimentation filaire pour les objets ayant accès à une prise de courant, piles ou batteries pour ceux qui
+					n'y ont pas accès ou de manière occasionnelle (recharge), capteurs d'énergie ou « energy harvesting	»
+					(photovoltaïque, piezoélectrique, thermoélectrique, cinétique…) pour rallonger la durée de vie des	objets
+					à très faible consommation, et enfin les objets passifs sans piles qui sont alimentés par les ondes	électromagnétique des lecteurs (RFID, NFC…).
+					L'énergie est un des grand défis des objets connectés,
+					tant pour garantir la plus grande durée de vie possible sans maintenance,
+					que pour garantir un respect environnemental malgré la multiplication des objets
+  					connectés énergivores qui envahissent nos espaces personnels et professionnels.
+				</p>
+				<h2 id="actionneurs">Les actionneurs</h2>
+				<p>
+					Les actionneurs sont des dispositifs qui transforment une donnée digitale en phénomène physique pour créer une action,
+					ils sont en quelque sorte l'inverse du capteur. Exemple d'actionneurs : Afficheurs, Alarmes, Haut-parleurs, Interrupteurs, Lampes, Moteurs, Pompes, Serrures, Vannes, Ventilateur,Vérins, …
+				</p>
+				<h2 id="connectivite">La connectivité</h2>
+				<p>
+					La connectivité de l'objet est assurée par une petite antenne Radio Fréquence qui va permettre la communication de l'objet vers un ou plusieurs réseaux (qui sont détaillés dans l'onglet « réseaux » ) .
+					Les objets pourront d'une part remonter des informations telles que leur identité, leur état,
+					une alerte ou les données de capteurs, et d'autre part recevoir des informations telles que des	commandes
+					d'action et des données. Le module de connectivité permet aussi de gérer le « cycle de vie de l'objet »,
+					c'est-à-dire, l'authentification et l'enregistrement dans le réseau, la mise en service, la mise à	jour et la suppression
+					de l'objet du réseau.
+				</p>
+
+			</section>
+		</main>
+		<!-- Bas de page -->
+		<footer id="footer">
+			<p>&copy; Copyright Algérie IoT - 2021</p>
+		</footer>
+	</body>
+
+</html>

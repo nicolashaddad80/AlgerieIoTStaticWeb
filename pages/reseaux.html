@@ -1,0 +1,249 @@
+<!--Les réseaux de l'IoT (page 3)-->
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Algérie IoT</title>
+
+		<link rel="icon" href="../images/favicon.jpg" type="image/jpg">
+		<link rel="stylesheet" type="text/css" href="../style/style.css">
+		<link rel="stylesheet" type="text/css" href="../style/impression.css" media="print">
+
+	</head>
+
+    <body>
+		<!-- Entête de la page -->
+		<header>
+			<!-- Logo -->
+			<img src="../images/logo.JPG" alt="logo IoT" id="LogoImg">
+			<!-- Titredu Site Internet -->
+			<p>Bienvenue sur Algérie IoT</p>
+
+			<!-- Menu horizontal sous-menus déroulant verticalement-->
+			<nav id="menu">
+				<label for="menu-mobile" class="menu-mobile">Menu</label>
+				<input type="checkbox" id="menu-mobile" role="button">
+				<ul>
+					<!-- Menu de la page Acceuil -->
+					<li class="menuActif"><a href="../index.html" title="Vers la page d'accueil du site" >Accueil</a>
+						<ul class="sumenu">
+							<li>
+								<a href="../index.html#definitionIOT">Qu'est ce que l'IoT</a>
+							</li>
+							<li>
+								<a href="../index.html#histoireIOT">L'Histoire de sa création</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Menu de la page Architecture -->
+					<li class="menuActif"><a href="./architecture.html" >Architecture </a>
+							<ul class="sumenu">
+								<li>
+									<a href="./architecture.html#composition">Composition</a>
+								</li>
+								<li>
+									<a href="./architecture.html#fonctions">Fonctions</a>
+								</li>
+								<li>
+									<a href="./architecture.html#capteurs">Capteurs</a>
+								</li>
+								<li>
+									<a href="./architecture.html#energie">Energie</a>
+								</li>
+								<li>
+									<a href="./architecture.html#actionneurs">Actionneurs</a>
+								</li>
+								<li>
+									<a href="./architecture.html#connectivite">Connectivité</a>
+								</li>
+
+							</ul>
+					</li>
+					<!-- Menu de la page Réseaux -->
+					<li class="menuActif"><a href="./reseaux.html" id ="actif">Reseaux </a>
+						<ul class="sumenu">
+							<li>
+								<a href="#les_reseaux">Les réseaux IoT</a>
+							</li>
+							<li>
+								<a href="#choix_reseau">Comment choisir un réseau </a>
+							</li>
+							<li>
+								<a href="#reseaux_personnel">Les réseaux personnels</a>
+							</li>
+							<li>
+								<a href="#reseaux_batiment">Les réseaux du bâtiment</a>
+							</li>
+							<li>
+								<a href="#reseaux_lpwan">Les réseaux LPWAN</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Menu de la page Exemples -->
+					<li class="menuActif"><a href="./exemples.html">Exemples</a>
+						<ul class="sumenu">
+							<li>
+								<a href="./exemples.html#securite">La sécurité</a>
+							</li>
+							<li>
+								<a href="./exemples.html#sante">La santé</a>
+							</li>
+							<li>
+								<a href="./exemples.html#transport_publics">Les transports publics</a>
+							</li>
+							<li>
+								<a href="./exemples.html#ville_intelligeantes">Les villes intelligentes</a>
+							</li>
+							<li>
+								<a href="./exemples.html#reseaux_electriques">Les réseaux électriques intelligents</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Menu de la page Bibliographie -->
+					<li class="menuActif"><a href="./produits.html"> Bibliographie</a>
+					
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Contenu de la Page Reseaux -->
+		<main >
+			<section id="contenu">
+				<h1 id="les_reseaux">Les réseaux IoT</h1>
+				<p>
+					Depuis les années 2010, la multiplication des objets connectés grand public et professionnels a
+					entraîné la création ou la transformation de multiples réseaux dédiés : les réseaux attachés à la personne,
+					« indoor » pour les bâtiments et « outdoor » à l’échelle des territoires, des pays ou même mondiaux.
+				</p>
+				<h2 id="choix_reseau">Comment choisir un réseau ?</h2>
+				<p>
+					Les réseaux <abbr title="Internet Of Things">IoT</abbr> se sont focalisés sur la performance énergétique pour augmenter :
+				</p>
+				<ul>
+					<li>La durée de vie des objets sur batterie,</li>
+					<li>La distance de communication pour diminuer les coûts d’infrastructure</li>
+					<li>Le coût de service pour permettre de connecter plus d’objets.</li>
+				</ul>
+				<p>
+					Un réseau sera choisi en fonction de nombreux critères tels que : disponibilité,
+					déploiement, maturité, espérance de vie, débit de données, distance et type de communication,
+					objets fixes ou mobiles, localisation des objets, niveau de sécurité, type d’opérateur de réseau,
+					durée de vie des batteries, disponibilité des modules, type de plateforme <abbr title="Internet Of Things">IoT</abbr>, coût (<abbr title="operational expenditure">OPEX</abbr>/<abbr title="capital expenditure"> CAPEX </abbr>),
+					maintenance, interopérabilité….		
+				</p>			
+				
+				<figure>
+					<img src="../images/reseaux.JPG" alt="image reseaux ">
+					<figcaption>&copy;Source tribu.phm.education.gouv</figcaption>
+				</figure>
+				
+							
+				<h2 id="reseaux_personnel">Les réseaux personnels</h2>
+				<p>
+					Ce sont les réseaux grand public attachés à la personne, orientés autour du sport & bien-être, des loisirs, des médias,des réseaux sociaux et de l’efficacité personnelle. Ces réseaux sont donc très souvent liés auxsmartphones ou à des dispositifs miniaturisés et portables. Les principaux réseaux sont :
+				</p>
+				<ul>
+					<li><strong>Bluetooth</strong> (<abbr title="Bluetooth Low Energy">BLE</abbr> , <abbr title="Bluetooth Low Energy">BLE</abbr> Smart, etc…) qui permet une connectivité facile à quelques mètres en utilisant
+					un protocole de communication très largement diffusé et disponible nativement sur de très nombreux
+					appareils
+					</li>
+					<li><strong> <abbr title="Advanced and Adaptive Network Technology">ANT+</abbr></strong> est un protocole propriétaire, avec de nombreux partenaires industriels et très fortement lié au sport et au bien-être
+					</li>
+				
+				</ul>
+
+				<h2 id="reseaux_batiment">Les réseaux du bâtiment</h2>
+				<p>
+					Les principaux réseaux du bâtiment sont :
+				</p>
+
+					
+					<ul>
+						<li> <strong><abbr title="Bluetooth Low Energy">BLE</abbr> industriel,</strong> issu du Bluetooth grand public fiabilisé pour l’industrie,
+						permet la création de réseaux denses dans les entrepôts ou le tertiaire pour
+						suivre les biens et les capteurs, avec une distance de communication typique
+						de 20 à 200m. Pouvant associer les étiquettes <abbr title="Bluetooth Low Energy">BLE</abbr> avec des balises, des
+						répétiteurs et des routeurs, ces réseaux permettent de très nombreuses
+						applications allant jusqu’à la géolocalisation à l’intérieur des bâtiments.</li>					
+					
+
+					
+				
+						<li><strong><abbr title="Radio Frequency Identification">RFID</abbr> Acive,</strong>comparable au <abbr title="Bluetooth Low Energy">BLE</abbr> dans les milieux industriels contraints, permet de
+						connecter et de géolocaliser des objets dans un bâtiment. Souvent complémentaire au <abbr title="Bluetooth Low Energy">BLE</abbr>,
+						la <abbr title="Radio Frequency Identification">RFID</abbr> active utilise un protocole non propriétaire libre de droit.</li>
+					
+						<li><strong><abbr title="Zonal Intercommunication Global-standard">Zigbee</abbr>:</strong>réseau maillé du bâtiment, permettant de connecter les objets de proche en proche,
+						basé sur un protocole propriétaire géré par la <abbr title="Zonal Intercommunication Global-standard">Zigbee</abbr> Alliance, souvent utilisé en domotique pour
+						remplacer le câblage électrique
+						(lumières, capteurs de confort, capteurs d’alertes)</li>
+					
+						<li> <strong>Z-Wave:</strong> réseau maillé assez similaire à <abbr title="Zonal Intercommunication Global-standard">Zigbee</abbr>, reposant aussi sur une alliance d’industriels ZWave Alliance</li>					
+						<li><strong>EnOcean :</strong>réseau domotique propriétaire, ayant la caractéristique d’offrir certaines fonctions sans batteries
+						avec capture de l’énergie (voir « energy harvesting » plus haut)
+					
+						<li><strong>Thread/ <abbr title=" IPv6  Low -Power Wireless Personal Area Networks">6LoWPAN</abbr> :</strong>réseau maillé du bâtiment, qui a pour vocation d’harmoniser la connexion des objets pour la maison
+						connectée.
+						C’est un protocole propriétaire basé sur la technologie <abbr title=" IPv6  Low -Power Wireless Personal Area Networks">6LoWPAN</abbr> (<abbr title=" Internet Protocol Version 6">IPv6</abbr> Low power Wireless Personal Area Networks),
+						et piloté par une alliance d’industriels emmenée par Google </li>
+					
+						<li><strong>WiFi Hallow :</strong>>autre réseau maillé pour la domotique, basé aussi sur de l’<abbr title=" Internet Protocol Version 6">IPv6</abbr> et un protocole WiFi adapté,
+						protocole propriétaire piloté par la WiFi Alliance</li>
+					
+						<li><strong><abbr title="Developers' Alliance for Standards Harmonization of ISO 18000-7">Dash7</abbr> :</strong>réseau plus longue distance pour la domotique et l’automobile, permettant une meilleure pénétration dans les
+						bâtiments à 433MHz et 868Mhz, protocole propriétaire piloté par la <abbr title="Developers' Alliance for Standards Harmonization of ISO 18000-7">Dash7</abbr> Alliance.</li>
+						<li><strong><abbr title="Long Range">LoRa</abbr> privé :</strong>réseaux cellulaire privé basé sur le protocole LoRaWAN, qui permet une communication longue
+						distance en intérieur et extérieur de messages courts (remontée de capteurs ou localisation). 
+						L’intérêt de ce réseau est de permettre aux objets de
+						sortir du mode « privé » en profitant des réseaux « publics » LoRaWAN avec un abonnement aux services
+						d’opérateurs nationaux et internationaux.</li>
+				</ul>
+				
+
+				<h2 id="reseaux_lpwan">Les réseaux LPWAN (Low Power Wide Area Network)</h2>	
+				<p>
+					Ce sont les nouveaux réseaux (cellulaires ou non) dédiés aux objets connectés en extérieur.
+					Ils sont idéaux pour remonter des informations simples de capteurs et de localisation vers des
+					plateformes de gestion d’objets, sur le cloud ou sur des réseaux privés.
+
+					Ces réseaux sont basés sur des protocoles privilégiant :
+				</p>
+				<ul>
+					<li>très basse consommation (autonomie de 5 à 10 ans)</li> 
+					<li>La très longue distance de communication (plusieurs km)</li> 
+					<li>La bonne couverture à l’intérieur des bâtiments</li> 
+					<li>La très forte densité d’objets connectables</li> 
+					<li>Les faibles coûts d’opération</li> 		
+				</ul>
+				<p>
+					La contrepartie de ces avantages est le débit limité de communication et la limitation du nombre de 
+					communications bi-directionnelles (à partir de l’objet ou vers l’objet).
+					Les principaux réseaux LPWAN sont :
+				</p>
+				<ul>
+					<li><strong>Sigfox </strong>est le premier réseau cellulaire créé spécifiquement pour les objets connectés, la couverture est très forte en France et dans les pays limitrophes et se déploie très rapidement en Amérique du Nord et en Asie. 
+					C’est un réseau opéré par Sigfox ou ses partenaires en fonction des pays, et qui repose sur un protocole de communication UNB (Ultra Narrow Band) pour favoriser la portée et le nombre d’objets connectés sur une même antenne. 
+					Fin 2015, Sigfox annonçait que déjà plus de 7 millions d’objets étaient connectés à leur réseau et ce nombre ne cesse de croitre.
+					</li>
+					<li>	<strong><abbr title="Long Range">LoRa</abbr>, </strong>	réseau cellulaire concurrent de Sigfox dédié aussi aux objets connectés, qui a vu ses premiers déploiements massifs 
+					à partir de 2017. Il utilise un protocole de communication ouvert géré par la <abbr title="Long Range">LoRa</abbr> Alliance, qui permet aux utilisateurs de 
+					créer leur propre réseau, interne (ex : un site industriel voir <abbr title="Long Range">LoRa</abbr> privé dans la section ci-dessus) ou bien 
+					d’utiliser les différents réseaux nationaux et internationaux des opérateurs (Objenious de Bouygues Télécom et Orange en France).
+					</li>
+					<li><strong>Wize EN13757-4/N</strong>  </li>	
+					<li><strong> 3GPP : </strong><abbr title="Long-Term Evolution Machine">LTE-M</abbr>,<abbr title="NarrowBand-Internet of Things"> NB-IOT</abbr>, 5G </li>
+					<li><strong>Réseaux propriétaires ou marché :</strong> ingenu,<abbr title="Random Phase Multiple Access"> RPMA</abbr>,<abbr title="Worldwide Interoperability for Microwave Access"> Wimax</abbr>, Qowisio et Weightless.</li>
+				</ul>
+			</section>
+		</main>
+		<!-- Bas de Page -->
+		<footer id="footer">
+			<p>&copy; Copyright Algérie IoT - 2021</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+@page {
+    margin: 2em 1em 2em 1em;
+    
+}
+body { /* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+    background-color :#fff;
+    font-family :Serif;
+    font-size :15pt;
+    padding-top: 2.5cm;
+    padding-bottom: 2.5cm;
+  }
+main { 
+    margin :2em;
+    padding: 0;
+    font-family :Serif;
+  }
+
+
+#menu, #footer ,header{ /* Les éléments qui ne seront pas affichés  */
+    display :none;
+  }
+  abbr[title]:after {
+    
+    content: " (" attr(title) ")";
+}
+
+#videaoCaption{
+  display: none;
+}
+
+h1 { /* Affichage du titre */
+    margin :1em;
+    padding :0;
+    text-indent :0;
+    line-height :10pt;
+    font-size :20pt;
+    color: #000;
+  }
+  
+  h2 { /* Modification de la couleur des titres et liens */
+    color :#000;
+  }
+  img{
+      display: block;
+      max-height: 100%;
+      width: auto;
+  }
+
+#LogoImg ,video{
+    display: none;
+
+}

@@ -1,0 +1,235 @@
+/*Fichier de Style du site IoT*/
+* {
+
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+#LogoImg {
+    
+    position: absolute;
+    width:90px ;
+    height: 70px;
+    padding: 5px ;   
+}
+
+header {
+   
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:linear-gradient(rgb(27, 92, 153), rgb(143, 228, 228));
+    z-index: 1000;
+}
+
+header p{
+    font-family: Cantarell, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:white;
+    height: 40px;
+    font-style: italic;
+    font-weight: bold;   
+
+}
+
+/* Css pour le menu des pages */
+#menu > ul > li {
+    
+    position: relative;
+    padding-left: 40px ;
+   display: inline;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+#menu  ul  li  a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu > ul > li > a {
+
+    display:inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    color:white;
+}
+
+#menu > a:hover {
+    color: blue;
+}
+
+.menuActif:hover{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112,192,0.15);
+} 
+
+#actif{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112,192,0.15);
+}
+
+/* Css pour le sous menu de menu des pages */
+#menu li:hover .sumenu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.sumenu{
+    display: none;
+}
+
+.sumenu li{
+    border-bottom: 1px solid rgb(71, 88, 99);
+    background-color: #3b85b686
+}
+
+.sumenu li:hover a {
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112,192,0.15);
+    color: black;
+}
+
+.sumenu li a {
+    padding: 5px 5px;
+    font-size: 13px;
+    color:white;
+    width: 200px;
+}
+
+/* Css pour cacher le menu mobile */
+#menu input[type=checkbox]{
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+#menu input[type=checkbox]:checked + ul{
+    display: block;
+}
+
+/* Css pour le contenu des pages */
+#contenu  {
+    background-color: #ffffffcc;
+    padding: 20px;
+}
+
+main{
+    background-image: url(../images/IoT__Page_Acceuil.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 150px 150px;
+    min-height: 100vh;
+}
+
+/*.conteneur  {
+    text-align: center; 
+}
+*/
+figure{
+    text-align: center;
+}
+/*css pour les vidéos*/
+video {
+    max-width: 100%;
+    height: auto
+}
+
+/*css pour les image*/
+img{
+    max-width: 100%;
+    height: auto;
+    left: 5px;   
+}
+
+figcaption{
+    font-size:small;
+    font-style: italic;
+}
+
+/*css pour les abrévations*/
+abbr {
+    text-decoration: underline;
+}
+
+#contenu > h1 {
+    font-family: Cantarell, Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(5, 5, 51);
+    font-style: italic;
+    font-weight:lighter;
+    text-align: center;
+}
+
+#contenu h2 {
+    font-family: Cantarell, Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(5, 5, 51);
+    font-style: italic;
+    font-weight:lighter;
+}
+
+#contenu p {
+    text-align:justify;
+}
+
+strong {
+    color: rgb(9, 9, 71);
+}
+
+/* Css pour bas pour le footer */
+#footer{
+    font-family: Arial, Helvetica, sans-serif;
+
+   /* background:linear-gradient(rgb(102, 172, 238), rgb(143, 228, 228));*/
+   background: linear-gradient(rgb(27, 92, 153), rgb(143, 228, 228));
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    color: wheat;    
+}
+
+/*Css pour rendre le site responsive  */
+@media screen and (max-width:780px){
+     main{
+        padding: 200px 30px 30px 30px ;
+    }
+    .menu-mobile{
+        display: block;
+        background: linear-gradient(rgb(27, 92, 153), rgb(143, 228, 228));
+        text-align: center;
+        color: white;      
+      }
+
+      #menu ul {
+        display: none;
+      }
+
+      #menu ul li, #menu ul li a {
+        width: 100%;
+        text-align: center;
+      }
+      
+      #menu ul li a , #menu ul li:hover a{
+        padding: 10px 0px;
+      }
+
+      #menu li:hover .sumenu{
+        display: block;
+        position: static;
+      }
+  }
