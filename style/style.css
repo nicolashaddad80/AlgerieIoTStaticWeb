@@ -246,14 +246,16 @@ strong {
     color:rgb(202, 7, 7);
 }
 @keyframes AutoSlide {
-    0%, 15%,50% {
-    left: 0px; /*1ère image*/
+    0%, 15%,100% {
+                    left: 0px; /*1ère image*/
     }
-    35%, 50%, 50%{
-    left: -1920px; /*2ème image*/
+    34%, 50% {
+            left: -1960px; /*2ème image*/
     }
-   
-}
+    65%, 80% {
+        left: -3880px; /*3ème image*/
+    }
+ }
     
 #carrousel {
 position: relative;
@@ -270,13 +272,13 @@ display: inline;
 position: absolute;
 top: 0;
 left: 0;
-width: 5100px;/*3xtaille image +10px*/
+width: 5880px;/*3xtaille image +10px*/
 margin: 0;
 padding: 0;
 
 /*CSS3 keyframes animation*/
 animation-name: AutoSlide;
-animation-duration: 10s;
+animation-duration: 15s;
 animation-iteration-count: infinite;
 animation-timing-function: ease-in-out;
 }
