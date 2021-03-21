@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Algérie IoT</title>
+
+		<link rel="icon" href="../images/favicon.jpg" type="image/jpg">
+		<link rel="stylesheet" type="text/css" href="../style/style.css">	
+		<link rel="stylesheet" type="text/css" href="../style/impression.css" media="print">
+		
+	</head>
+	<body>
+		<!-- Entête de la page -->
+		<header>
+			<!-- Logo -->
+			<img src="../images/logo.JPG" alt="logo IoT" id="LogoImg">
+			<!-- Titredu Site Internet -->
+			<p>Bienvenue sur Algérie IoT</p>
+
+			<!-- Menu horizontal sous-menus déroulant verticalement-->
+			<nav id="menu">
+				<label for="menu-mobile" class="menu-mobile">Menu</label>
+				<input type="checkbox" id="menu-mobile" role="button">
+				<ul>
+					<!-- Menu de la page Acceuil -->
+					<li class="menuActif"><a href="../index.html" title="Vers la page d'accueil du site" >Accueil</a>
+						<ul class="sumenu">
+							<li>
+								<a href="../index.html#definitionIOT">Qu'est ce que l'IoT</a>
+							</li>
+							<li>
+								<a href="../index.html#histoireIOT">L'Histoire de sa création</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Menu de la page Architecture -->
+					<li class="menuActif"><a href="./architecture.html" id ="actif">Architecture </a>
+							<ul class="sumenu">
+								<li>
+									<a href="#composition">Composition</a>
+								</li>
+								<li>
+									<a href="#fonctions">Fonctions</a>
+								</li>
+								<li>
+									<a href="#capteurs">Capteurs</a>
+								</li>
+								<li>
+									<a href="#energie">Energie</a>
+								</li>
+								<li>
+									<a href="#actionneurs">Actionneurs</a>
+								</li>
+								<li>
+									<a href="#connectivite">Connectivité</a>
+								</li>
+
+							</ul>
+					</li>
+					<!-- Menu de la page Réseaux -->
+					<li class="menuActif"><a href="./reseaux.html">Reseaux </a>
+						<ul class="sumenu">
+							<li>
+								<a href="./reseaux.html#les_reseaux">Les réseaux IoT</a>
+							</li>
+							<li>
+								<a href="./reseaux.html#choix_reseau">Comment choisir un réseau </a>
+							</li>
+							<li>
+								<a href="./reseaux.html#reseaux_personnel">Les réseaux personnels</a>
+							</li>
+							<li>
+								<a href="./reseaux.html#reseaux_batiment">Les réseaux du bâtiment</a>
+							</li>
+							<li>
+								<a href="./reseaux.html#reseaux_lpwan">Les réseaux LPWAN</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Menu de la page Exemples -->
+					<li class="menuActif"><a href="./exemples.html">Exemples</a>
+						<ul class="sumenu">
+							<li>
+								<a href="./exemples.html#securite">La sécurité</a>
+							</li>
+							<li>
+								<a href="./exemples.html#sante">La santé</a>
+							</li>
+							<li>
+								<a href="./exemples.html#transport_publics">Les transports publics</a>
+							</li>
+							<li>
+								<a href="./exemples.html#ville_intelligeantes">Les villes intelligentes</a>
+							</li>
+							<li>
+								<a href="./exemples.html#reseaux_electriques">Les réseaux électriques intelligents</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Menu de la page Bibliographie -->
+					<li class="menuActif"><a href="./produits.html"> Nos Produits</a>
+					
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Contenu de la page Acceuil -->
+		<main >
+			<section id="contenu">
+				<!-- Définition de l'IOT -->
+				<h1 id="definitionIOT">Qu'est ce que l'IoT?</h1>
+				<p>
+					L'<strong><abbr class="superior" title="Internet Of Things">IoT</abbr></strong> est l'acronyme de <strong>Internet Of Things</strong> (Internet des Objets
+					en français).
+					Le terme <abbr title="Internet Of Things">IoT</abbr> est apparu la première fois en 1999 dans un discours de Kevin ASHTON,
+					un ingénieur britannique. Il servait à désigner un système où les objets physiques sont
+					connectés à Internet. Il s'agit également de systèmes capables de créer et transmettre des
+					données afin de créer de la valeur pour ses utilisateurs à travers divers services
+					(agrégation, analytique…).
+
+					Selon l'<abbr title="Union Internationale des Télécommunications">UIT</abbr>(Union Internationale des Télécommunications), l'Internet des Objets est défini
+					comme « une infrastructure mondiale pour la société de l'information, qui permet
+					de disposer de services évolués en interconnectant des objets (physique ou virtuels)
+					grâce aux technologies de l'information et de la communication interopérables existantes ou en
+					évolution ».
+
+					Au fil du temps, le terme a évolué et il englobe maintenant tout l'écosystème des
+					objets connectés. Cet écosystème englobe, des fabricants de capteurs, des éditeurs
+					de logiciels, des opérateurs historiques ou nouveaux sur le marché, des intégrateurs…
+					Cet éclectisme en fait sa richesse.
+				</p>
+				
+				<figure>
+					<video controls="" src="./video/difinitionIoT.mp4">Désolé, votre navigateur ne supporte pas la vidéo </video>
+					<figcaption id="videaoCaption"> &copy;Source youtube </figcaption>
+				</figure>
+				
+				<!-- Breve Histoire de L'IOT -->
+				<h1 id="histoireIOT">L'Histoire de sa création </h1>
+				<p>
+					Le terme Internet des objets est utilisé pour la première fois en 1999 par Kevin Ashton, 
+					employé de Procter & Gamble (<abbr title="Procter & Gamble">P&G</abbr>), qui désigne alors le lien entre la technologique <abbr title="Radio-frequency identification">RFID</abbr> et l’Internet.
+
+					Le premier objet connecté est commercialisé en 2003 par la firme Violet. C’est la lampe DAL, équipée de 9 leds qui s’allument en fonction des évènements. Deux ans plus tard, en 2005, Violet lance le célèbre lapin Nabaztag. 
+					Racheté par Mindscape puis Aldebaran Robotics en 2013, il disparaîtra en 2015.<br>
+
+					<strong> <abbr title="Internet Of Things">IoT</abbr> + data + <abbr title="intelligence artificielle">IA </abbr>:</strong> L’Internet des objets n’est donc pas une technologie récente mais elle est 
+					aujourd’hui associée à d’autres technologies en plein développement telles que l’intelligence artificielle, 
+					la big data ou la <abbr title="virtual reality">VR</abbr> . C’est cette synergie qui révolutionnera nos usages. Ainsi, dans un avenir proche nous vivrons dans un monde où nous pourrons non seulement interagir avec tous nos appareils à distance et en temps réel, mais nos appareils pourront également interagir entre eux, s’échanger des données et les analyser pour nous proposer 
+					toujours plus de services et de fonctionnalités parfaitement adaptés à nos besoins. Preuve de la révolution à venir, 
+					Microsoft ouvre à Munich un laboratoire spécialisé dans l’<abbr title="Internet Of Things">IoT</abbr> et l’intelligence artificielle.<br>
+					On ne peut améliorer que ce qu’on peut mesurer. Or, l’<abbr title="Internet Of Things">IoT</abbr> peut tout mesurer à distance, de manière instantanée et automatisée. 
+					C’est en cela que c’est une technologie révolutionnaire.
+				</p>
+
+			</section>
+		</main>
+
+		<!-- Bas de page -->
+		<footer id="footer">
+			<nav class = "footernav">
+			<a href="https://www.facebook.com/soummam.iot" target="_blank"><img src="./images/facebookicon.jpg" alt="Facebook logo image" class="footerimage" ></a>
+			<a href="https://www.instagram.com/algerieiot" target="_blank"><img src="./images/instagramicon.jpg" alt="Instagram logo image" class="footerimage" ></a>
+			<a href="https://www.youtube.com/channel/UCnQG_MwArlHl5fyISjJENIw" target="_blank"><img src="./images/youtubeicon.png" alt="Instagram logo image" class="footerimage" ></a>
+			<a href="https://twitter.com/AlgerieIot" target="_blank"><img src="./images/twittericon.png" alt="Instagram logo image" class="footerimage" ></a>
+			<a href="https://www.linkedin.com/in/algérie-iot-141911209" target="_blank"><img src="./images/linkedinicon.png" alt="Instagram logo image" class="footerimage" ></a>
+
+			</nav>
+			<nav class = "footernav">
+					Contact: 
+				<ul>
+					<li><img src="./images/mailtoicon.png" alt="Instagram logo image" class="conactimage" > algerieiot@gmail.com</li>
+					<li>☎️ Algérie: +213 (0)7 99 31 08 43</li>
+					<li>☎️ France: +33 (0)6 51 51 84 75</li>
+				</ul>
+			</nav>
+			<p>&copy; Copyright 2021 - Algérie IoT - All Rights Reserved</p>
+		</footer>
+
+	</body>
+
+</html>
