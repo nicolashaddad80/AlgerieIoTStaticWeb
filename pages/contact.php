@@ -22,7 +22,6 @@ $headers .= 'MIME-version: 1.0'."\n";
 $headers .= 'Content-type: text/html; charset= iso-8859-1';
 
 
-
 $mail_status = mail($mail_to, $subject, $body_message, $headers);
 
 if ($mail_status) { ?>
