@@ -192,7 +192,10 @@ abbr {
 strong {
     color: rgb(9, 9, 71);
 }
-
+#baniere{
+    color:chartreuse;
+    font-weight:bolder  ;
+}
 /* Css pour bas pour le footer */
 #footer{
     font-family: Arial, Helvetica, sans-serif;
