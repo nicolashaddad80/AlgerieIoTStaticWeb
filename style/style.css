@@ -240,7 +240,11 @@ strong {
     padding: 10px;
 }
 
-
+#footercontactlink{
+    font-size:larger;
+    font-weight:bolder;
+    color:rgb(202, 7, 7);
+}
 @keyframes AutoSlide {
     0%, 15%,50% {
     left: 0px; /*1ère image*/
