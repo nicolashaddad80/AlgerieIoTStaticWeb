@@ -73,6 +73,10 @@ header p{
     background-color: rgba(000, 112,192,0.15);
 } 
 
+.menuActif  #veryimportant{
+    color: rgb(202, 7, 7);
+}
+
 #actif{
     border-top: 5px solid #0070bb;
     background-color: rgba(000, 112,192,0.15);
@@ -222,6 +226,8 @@ strong {
     display:inline-block;
 
 }
+
+
 
 @keyframes AutoSlide {
     0%, 15%,50% {
