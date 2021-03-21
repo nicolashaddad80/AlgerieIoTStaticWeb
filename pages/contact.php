@@ -22,15 +22,14 @@ $headers .= 'MIME-version: 1.0'."\n";
 $headers .= 'Content-type: text/html; charset= iso-8859-1';
 
 
-
 $mail_status = mail($mail_to, $subject, $body_message, $headers);
 
 if ($mail_status) { ?>
     <script language="javascript" type="text/javascript">
         // Print a message
-        alert('Thank you for the message. We will contact you shortly.');
+        alert('Nous vous remerçions pour votre message. nous vous contacterons dans les meilleurs délais.');
         // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-        window.location = 'contact.html';
+        window.location = './contact.html';
     </script>
 <?php
 }
@@ -40,9 +39,9 @@ if ($mail_status) { ?>
 else { ?>
     <script language="javascript" type="text/javascript">
         // Print a message
-        alert('Message failed. Please, send an email to gordon@template-help.com');
+        alert('Erreur! . SVP,envoyez un email à: algerieiot@gmail.com');
         // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-        window.location = 'contact_page.html';
+        window.location = './contact.html';
     </script>
 <?php
 }?>
