@@ -227,6 +227,18 @@ strong {
 
 }
 
+#inputzone1{
+    width:  300px;
+}
+#inputzone2{
+    width : 700PX;
+    height :200px;
+}
+
+.contactdiv{
+    display: inline-block;
+    padding: 10px;
+}
 
 
 @keyframes AutoSlide {
