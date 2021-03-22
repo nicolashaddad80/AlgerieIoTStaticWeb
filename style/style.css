@@ -140,7 +140,7 @@ main{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding: 60px 40px;
+    padding: 60px 60px;
     min-height: 100vh;
 }
 
@@ -241,10 +241,10 @@ strong {
                     left: 0px; /*1ère image*/
     }
     34%, 50% {
-            left: -1960px; /*2ème image*/
+            left: -1405px; /*2ème image*/
     }
     65%, 80% {
-        left: -3880px; /*3ème image*/
+        left: -2810px; /*3ème image*/
     }
  }
     
@@ -252,7 +252,7 @@ strong {
 position: relative;
 width: 1400px; /*taille image*/
 height: 500px;/*taille image*/
-margin:  auto;
+margin:  5px;
 overflow: hidden;
 }
 #content li {
@@ -263,7 +263,7 @@ display: inline;
 position: absolute;
 top: 0;
 left: 0;
-width: 5880px;/*3xtaille image +10px*/
+width:4220px;/*3xtaille image +10px*/
 margin: 0;
 padding: 0;
 
