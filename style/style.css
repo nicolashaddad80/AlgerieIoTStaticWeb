@@ -222,7 +222,7 @@ strong {
     width:  300px;
 }
 #inputzone2{
-    width : 700PX;
+    width : 250%;
     height :200px;
 }
 
@@ -284,6 +284,11 @@ animation-timing-function: ease-in-out;
      height: auto;
      bottom: 0;
      color: rgb(20, 17, 12);    
+}
+
+.copyright{
+    color: crimson;
+    font-weight: bolder;
 }
 /*
 #footer{
