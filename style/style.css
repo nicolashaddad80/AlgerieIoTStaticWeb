@@ -13,9 +13,9 @@ body{
 #LogoImg {
     
     position: absolute;
-    width:90px ;
-    height: 70px;
-    padding: 5px ;   
+    width:50px ;
+    height: 50px;
+    /*padding: 0px,0px,0px,0px ; */  
 }
 
 header {
@@ -27,17 +27,17 @@ header {
     background:linear-gradient(rgb(27, 92, 153), rgb(143, 228, 228));
     z-index: 1000;
 }
-
+/*
 header p{
     font-family: Cantarell, Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     color:white;
-    height: 40px;
+    height: 20px;
     font-style: italic;
     font-weight: bold;   
 
 }
-
+*/
 /* Css pour le menu des pages */
 #menu > ul > li {
     
@@ -140,7 +140,7 @@ main{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding: 150px 150px;
+    padding: 60px 60px;
     min-height: 100vh;
 }
 
@@ -222,7 +222,7 @@ strong {
     width:  300px;
 }
 #inputzone2{
-    width : 700PX;
+    width : 250%;
     height :200px;
 }
 
@@ -241,18 +241,18 @@ strong {
                     left: 0px; /*1ère image*/
     }
     34%, 50% {
-            left: -1960px; /*2ème image*/
+            left: -1405px; /*2ème image*/
     }
     65%, 80% {
-        left: -3880px; /*3ème image*/
+        left: -2810px; /*3ème image*/
     }
  }
     
 #carrousel {
 position: relative;
-width: 1700px; /*taille image*/
-height: 750px;/*taille image*/
-margin: 20px auto;
+width: 1400px; /*taille image*/
+height: 500px;/*taille image*/
+margin:  5px;
 overflow: hidden;
 }
 #content li {
@@ -263,7 +263,7 @@ display: inline;
 position: absolute;
 top: 0;
 left: 0;
-width: 5880px;/*3xtaille image +10px*/
+width:4220px;/*3xtaille image +10px*/
 margin: 0;
 padding: 0;
 
@@ -284,6 +284,11 @@ animation-timing-function: ease-in-out;
      height: auto;
      bottom: 0;
      color: rgb(20, 17, 12);    
+}
+
+.copyright{
+    color: crimson;
+    font-weight: bolder;
 }
 /*
 #footer{

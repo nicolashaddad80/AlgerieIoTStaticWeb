@@ -1,0 +1,4 @@
+AddType text/html .html
+<IfDefine Free>
+php56 1
+</IfDefine>
