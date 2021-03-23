@@ -197,7 +197,7 @@ strong {
     color: rgb(9, 9, 71);
 }
 #baniere{
-    color:chartreuse;
+    color:crimson;
     font-weight:bolder  ;
 }
 /* Css pour bas pour le footer */
@@ -305,13 +305,14 @@ animation-timing-function: ease-in-out;
 /*Css pour rendre le site responsive  */
 @media screen and (max-width:780px){
      main{
-        padding: 200px 30px 30px 30px ;
+        padding: 10px 30px 300px 30px ;
     }
     .menu-mobile{
         display: block;
         background: linear-gradient(rgb(27, 92, 153), rgb(143, 228, 228));
-        text-align: center;
-        color: white;      
+        text-align: left;
+        color: white;  
+        padding-left: 100px;
       }
 
       #menu ul {
@@ -320,7 +321,8 @@ animation-timing-function: ease-in-out;
 
       #menu ul li, #menu ul li a {
         width: 100%;
-        text-align: center;
+        text-align: left;
+        padding-left: 55px;
       }
       
       #menu ul li a , #menu ul li:hover a{
@@ -328,7 +330,28 @@ animation-timing-function: ease-in-out;
       }
 
       #menu li:hover .sumenu{
-        display: block;
+        display: none;
         position: static;
       }
+
+    #inputzone1{
+        width:  75%;
+    }
+    #inputzone2{
+        width : 100%;
+        height :200px;
+    }
+
+    #footerrepeat{
+        display: none;
+    }
+
+    #carrousel {
+        display: none;
+    }
+   /* #messagesubmit{
+        padding-bottom: 100px;
+    }
+*/
+
 }
