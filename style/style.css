@@ -294,6 +294,10 @@ animation-timing-function: ease-in-out;
     color: crimson;
     font-weight: bolder;
 }
+
+#insteadcarrousel{
+    display:none;
+}
 /*
 #footer{
     font-family: Arial, Helvetica, sans-serif;
