@@ -286,6 +286,10 @@ animation-timing-function: ease-in-out;
      color: rgb(20, 17, 12);    
 }
 
+.messagesubmit{
+    padding-left: 120px;
+}
+
 .copyright{
     color: crimson;
     font-weight: bolder;
@@ -348,6 +352,9 @@ animation-timing-function: ease-in-out;
 
     #carrousel {
         display: none;
+    }
+    .messagesubmit{
+        padding-left: 50px;
     }
    /* #messagesubmit{
         padding-bottom: 100px;
