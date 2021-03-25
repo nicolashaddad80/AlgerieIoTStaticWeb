@@ -10,7 +10,27 @@
 		<link rel="icon" href="../images/favicon.jpg" type="image/jpg">
 		<link rel="stylesheet" type="text/css" href="../style/style.css">	
 		<link rel="stylesheet" type="text/css" href="../style/impression.css" media="print">
+		<script>
+			function validateForm() {
+			  var x = document.forms["myForm"]["cf_name"].value;
+			  var y = document.forms["myForm"]["cf_email"].value;
+			  var z = document.forms["myForm"]["cf_message"].value;
+			  if (x == "" || x == null) {
+				alert("Merci de remplir votre Nom");
+				return false;
+			  }
 
+			  if (y == "" || x == null) {
+				alert("Merci de remplir votre E-mail");
+				return false;
+			  }
+
+			  if (z == "" || z == null) {
+				alert("Merci de nous ecrire votre message ");
+				return false;
+			  }
+			}
+		</script>
 	</head>
 	<body>
 		<!-- Entête de la page -->
@@ -132,9 +152,9 @@
 				</div>
 				<div class="contactdiv">
 			
-					<form action="contact.php" method="post">
+					<form name="myForm" action="contact.php" onsubmit="return validateForm()" method="post" required>
 						Nom   <input type="text" name="cf_name" id="inputzone1"><br>
-						Mail  <input type="text" name="cf_email" id="inputzone1"><br>
+						Mail  <input type="email" name="cf_email" id="inputzone1"><br>
 						Message <input type="submit" value="envoyer" class="messagesubmit"><br>
 						<textarea name="cf_message" id="inputzone2"></textarea><br>
 						
