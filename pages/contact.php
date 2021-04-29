@@ -32,7 +32,7 @@ $sms->setKey("5Nz6mYowPxu5ud")
  
 try {
     // envoi d'un message
-    $sms->send("Algérie IoT: message de:\r\n".$field_email);
+    $sms->send("Algérie IoT:\r\n".$body_message);
 } catch (Exception $e) {
     // le monde n'est pas parfait, il y aura
     // peut-être des erreurs.
