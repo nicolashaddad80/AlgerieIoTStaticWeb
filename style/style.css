@@ -24,7 +24,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background:linear-gradient(rgb(27, 92, 153), rgb(143, 228, 228));
+    background:linear-gradient(rgb(255, 255, 255), rgb(0, 102, 51));
     z-index: 1000;
 }
 /*
@@ -61,7 +61,7 @@ header p{
     text-decoration: none;
     text-align: center;
     font-weight: bolder;
-    color:white;
+    color:rgb(166, 12, 40);
 }
 
 #menu > a:hover {
@@ -215,6 +215,7 @@ strong {
 }
 .footernav{
     display:inline-block;
+    padding-inline: 20px;
 
 }
 
@@ -241,20 +242,28 @@ strong {
                     left: 0px; /*1ère image*/
     }
     34%, 50% {
-            left: -1405px; /*2ème image*/
+            left: -1600px; /*2ème image*/
     }
-    65%, 80% {
+/*     65%, 80% {
         left: -2810px; /*3ème image*/
-    }
+  /*  } */
  }
     
-#carrousel {
-position: relative;
-width: 1400px; /*taille image*/
-height: 500px;/*taille image*/
-margin:  5px;
-overflow: hidden;
+
+.carousel .slide img, 
+.carousel .item img {
+  width: 80%;
+  height: 80%;
+  object-fit:scale-down; /* Affiche l'image entière en conservant ses proportions */
+  background-color: #000; /* Optionnel : ajoute une couleur de fond si les dimensions diffèrent */
 }
+
+.carousel .slide img {
+  transform: scale(0.8); /* Réduit l'image à 80% de sa taille */
+  transform-origin: center center; /* Centre le "dézoom" */
+  transition: transform 0.3s ease;
+}
+
 #content li {
 display: inline;
 }
@@ -263,13 +272,13 @@ display: inline;
 position: absolute;
 top: 0;
 left: 0;
-width:4220px;/*3xtaille image +10px*/
+width:4100px;/*3xtaille image +10px*/
 margin: 0;
 padding: 0;
 
 /*CSS3 keyframes animation*/
 animation-name: AutoSlide;
-animation-duration: 15s;
+animation-duration: 20s;
 animation-iteration-count: infinite;
 animation-timing-function: ease-in-out;
 }
